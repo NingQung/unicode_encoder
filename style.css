@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Novecentowide-DemiBold";
+  src: url("Novecentowide-DemiBold.woff") format('woff');
+}
+#root, body, html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+#main,#main-back{
+  width: 70%;
+  height: 90%;
+  position: absolute;
+  display: inline-flex
+}
+#main{
+  overflow: clip;
+  background-color: white;
+}
+
+.text{
+  font-family: Novecentowide-DemiBold;
+  position: absolute;
+  font-size: 120px;
+}
+#Dtext-1{
+  top: -8%;
+  left: -20%;
+}
+#Dtext-2{
+  bottom: -5%;
+  right: -20%;
+}
+#main .text{
+  background-clip: text;
+  background-image: linear-gradient(45deg, #0000, #0000 20%, #000 0, #000 29%, #0000 0, #0000 70%, #000 0, #000 80%, #0000 0, #0000);
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: .5rem .5rem;
+  color: #0000;
+}
